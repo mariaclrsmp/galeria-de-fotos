@@ -1,0 +1,65 @@
+:root {
+    --shadow: drop-shadow(-2px -2px 20px #e59500)
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    background: palegoldenrod;
+}
+
+.header {
+    text-align: center;
+    text-transform: lowercase;
+    font-size: large;
+    padding: 20px;
+    background-color: #e59500;
+    color: #002642;
+    border-bottom: 5px solid #840032;
+}
+  
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 1400px;
+    margin: 0;
+    padding: 20px 30px;
+}
+  
+.gallery img {
+    width: 30%;
+    max-width: 300px;
+    height: 250px;
+    object-fit:cover;
+    border-radius: 15px;
+}
+  
+.brightness-higher {
+    filter: brightness(130%) var(--shadow);
+}
+
+.brightness-lower {
+    filter: brightness(90%) var(--shadow);
+}
+
+.contrast-higher {
+    filter: contrast(110%) var(--shadow);
+}
+
+.contrast-lower {
+    filter: contrast(95%) var(--shadow);
+}
+
+  .saturation-lower {
+    filter: saturate(80%) ;
+}
+
