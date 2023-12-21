@@ -1,3 +1,13 @@
+/*
+
+--termo:
+
+*/
+
+:root {
+    --shadow: drop-shadow(-2px -2px 20px #e59500)
+}
+
 * {
     box-sizing: border-box;
 }
@@ -8,7 +18,7 @@ body {
     font-weight: lighter;
     background: palegoldenrod;
 }
-  
+
 .header {
     text-align: center;
     text-transform: lowercase;
@@ -40,22 +50,22 @@ body {
 }
   
 .brightness-higher {
-    filter: brightness(130%) drop-shadow(-2px -2px 20px #e59500);
+    filter: brightness(130%) var(--shadow);
 }
 
 .brightness-lower {
-    filter: brightness(90%) drop-shadow(-2px -2px 20px #e59500);
+    filter: brightness(90%) var(--shadow);
 }
 
 .contrast-higher {
-    filter: contrast(110%) drop-shadow(-2px -2px 20px #e59500);
+    filter: contrast(110%) var(--shadow);
 }
 
 .contrast-lower {
-    filter: contrast(95%) drop-shadow(-2px -2px 20px #e59500);
+    filter: contrast(95%) var(--shadow);
 }
 
   .saturation-lower {
-    filter: saturate(80%) drop-shadow(-2px -2px 20px #e59500);
+    filter: saturate(80%) var(--shadow);
 }
 
